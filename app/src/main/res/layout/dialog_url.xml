@@ -1,0 +1,216 @@
+<hu.aut.utillib.circular.widget.CircularFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/items_reveal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+
+                android:id="@+id/parentPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#eeeeee"
+                android:clickable="false"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/topPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/title_template"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="16dip"
+                        android:layout_marginStart="16dip">
+
+                        <com.salari.mohammadreza.mobile.leenk.Views.MyTextView
+                            android:id="@+id/txtDTitle"
+                            style="@style/DialogWindowTitle"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:singleLine="true"
+                            android:text="asdfghjklsdfghjkl;asdfghjkl;&apos;"
+                            android:textDirection="rtl"
+                            tools:ignore="MissingPrefix" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/titleDivider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/divider_color"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contentPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+
+                    android:background="#f7f7f7"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.salari.mohammadreza.mobile.leenk.Views.MyTextView
+                                        android:id="@+id/txtDSU"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_toLeftOf="@+id/btnCopyShortUrl"
+                                        android:layout_toStartOf="@+id/btnCopyShortUrl"
+
+                                        android:text="Sample TEXT"
+                                        android:textColor="#1d1d1d"
+                                        tools:ignore="MissingPrefix" />
+
+                                    <ImageView
+                                        android:id="@+id/btnCopyShortUrl"
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="5dp"
+                                        android:src="@drawable/ic_copy" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.salari.mohammadreza.mobile.leenk.Views.MyTextView
+                                        android:id="@+id/txtDLU"
+                                        fontPath="fonts/ubuntu_reg.ttf"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="5dp"
+                                        android:layout_toLeftOf="@+id/btnCopyLongUrl"
+                                        android:layout_toStartOf="@+id/btnCopyLongUrl"
+                                        android:text="Sample TEXT"
+                                        android:textColor="#1d1d1d"
+                                        tools:ignore="MissingPrefix" />
+
+                                    <ImageView
+                                        android:id="@+id/btnCopyLongUrl"
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="5dp"
+                                        android:src="@drawable/ic_copy" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+                        <!-- Other 2 icons here-->
+
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/customPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f7f7f7">
+
+                    <com.salari.mohammadreza.mobile.leenk.Views.MyButton
+                        android:id="@+id/btnOk"
+                        style="@style/dialog_btn"
+                        fontPath="fonts/ubuntu_reg.ttf"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="OK"
+                        android:visibility="visible"
+                        tools:ignore="MissingPrefix" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        style="@style/dialog_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+
+                        android:text="Cancle"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</hu.aut.utillib.circular.widget.CircularFrameLayout>

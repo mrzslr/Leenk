@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Leenk</string>
+    <string name="action_settings">Settings</string>
+    <string name="text1">App’s Attach button as an example.</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="t_comm">DO NOT AFRAID LONG LEENK</string>
+    <string name="t_lnk">BREAK LONG LEENKS</string>
+
+    <string name="t_enjoy">SHARE LINKS WITH FRIENDS AND ENJOY !</string>
+    <string name="app_desc">
+       Leenk is a url shortneer service .you can short all your long links.this Application based on google url shortneer engine. \n \n
+        No need to long links . \n Short it fast . \n Share it with friends . \n Enjoy that .
+    </string>
+</resources>
